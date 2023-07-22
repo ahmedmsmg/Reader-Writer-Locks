@@ -1,0 +1,42 @@
+This program implements a non-starving Read/Write process. The program ensures that only once writer is in execution, all other threads must wait.
+On the other hand, if a reader is executing, other reader are allowed to run.
+
+To run the program, use the "make" command.
+
+or u can use gcc -o rwmain main.c readerwriter.c -lpthread
+as an alternative to "make"
+
+Once compiled, run ./rwmain to execute the program.
+
+An additional command "make clean" can be used to remove all the ".o" files and the "main" file.
+
+Reader's in... reading 
+Finished Reading... 
+Writer's in... writing 
+Finished Writing 
+Writer's in... writing 
+Finished Writing 
+Reader's in... reading 
+Finished Reading... 
+Writer's in... writing 
+Finished Writing 
+Writer's in... writing 
+Finished Writing 
+Reader's in... reading 
+Finished Reading... 
+Reader's in... reading 
+Reader's in... reading 
+Reader's in... reading 
+Reader's in... reading 
+Finished Reading... 
+Finished Reading... 
+Finished Reading... 
+Finished Reading... 
+Writer's in... writing 
+Finished Writing 
+Reader's in... reading 
+Reader's in... reading 
+Finished Reading... 
+Reader's in... reading 
+Finished Reading... 
+Finished Reading... 
